@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="signup.css"/>
+    <link rel="stylesheet" href="./icons/all.min.css"/>
+  </head>
+
+  <body>
+
+    <form action="#" id="formSubmit">
+      <div class="progress-bar">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div>
+
+      <div class="sign-up-text">
+        <span class="icon"><i class="fa-solid fa-arrow-left"></i></span> Sign Up
+      </div>
+
+      <div class="form-group">
+        <label for="username">Player ID</label>
+        <input type="text" id="player" name="player" placeholder="example#1234"/>
+        <p id="playerError"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com"/>
+        <p id="emailError"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password"  id="password" name="password"/>
+        <p id="passwordError"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirm-password"/>
+        <p id="confirmPasswordError"></p>
+      </div>
+
+      <div class="check-box">
+        <div class="check-box-flex">
+           <input type="checkbox"  id="myCheckbox" name="news"/>
+           <span for="news">I agree to the Terms and Conditions</span>
+        </div>
+          <p id="checkboxError"></p>
+      </div>
+
+      <!-- <div class="check-box">
+        <input type="checkbox" id="news2" name="news" />
+        <label for="news"> Do you want to know the news? </label>
+      </div> -->
+
+      <input type="submit" value="Create Account" />
+
+      <p>Do you have an account? <a href="#">Log in</a></p>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

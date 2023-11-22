@@ -1,0 +1,210 @@
+:root {
+  --color-body: #1e1e1e;
+  --color-base1: #09150b;
+  --color-base2: #0f7c0f;
+  --color-text: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-body);
+  color: var(--color-text);
+}
+
+form {
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  background-color: var(--color-base1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bars {
+  width: 32%;
+  height: 2px;
+  background-color: var(--color-base2);
+  margin: 25px 0;
+}
+
+.sign-up-text {
+  margin-bottom: 35px;
+}
+
+.icon i {
+  padding-right: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: 2px solid var(--color-base2);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(
+    --color-base2
+  ); /* Green background color for checked state */
+  /* border: 1px solid #fff; White border for checked state */
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2713"; /* Unicode checkmark character */
+  color: #fff; /* White color for the checkmark */
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  justify-items: center;
+  line-height: 0px;
+  font-weight: 650;
+  margin-left: -4px;
+}
+
+#myCheckbox {
+  width: 15px;
+  height: 15px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+#news2 {
+  width: 15px;
+  height: 15px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.check-box {
+  margin-bottom:5px;
+}
+.check-box-flex{
+  display: flex;
+  align-items: center;
+}
+
+input[type="submit"] {
+  background-color: var(--color-base2);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+p a {
+  /* text-decoration: none; */
+  color: white;
+}
+
+/* Error message for validation */
+
+#playerError {
+  color: red;
+  padding: 0;
+  font-size: 12px;
+  text-align: left;
+  display: none;
+}
+
+#emailError {
+  color: red;
+  padding: 0;
+  font-size: 12px;
+  text-align: left;
+  display: none;
+}
+
+#passwordError {
+  color: red;
+  padding: 0;
+  font-size: 12px;
+  text-align: left;
+  display: none;
+}
+
+#confirmPasswordError {
+  color: red;
+  padding: 0;
+  font-size: 12px;
+  display: none;
+}
+
+#checkboxError {
+  color: red;
+  padding: 0;
+  margin-top:10px;
+  font-size: 12px;
+  text-align: start;
+  display: none;
+}
+
+/* form Create Account css responsiveness */
+
+@media screen and (max-width: 400px) {
+     body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    padding: 20px;
+    background-color: var(--color-body);
+  }
+}
+
+@media screen and (max-width: 375px) {
+ body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: var(--color-body);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sign-up-text {
+  margin-bottom: 35px;
+  margin-top: -8px;
+}
+.icon i {
+  padding-right: 5px;
+}
+}
+
+@media screen and (max-width: 299px) {
+  .sign-up-text {
+  margin-bottom: 35px;
+  margin-top: -8px;
+}
+
+.icon i {
+  padding-right: 5px;
+}
+
+}
+

@@ -1,0 +1,224 @@
+:root {
+  --color-body: #1e1e1e;
+  --color-base1: #09150b;
+  --color-base2: #0f7c0f;
+  --color-text: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-body);
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: var(--color-base1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-top-right-radius: 70px;
+  padding-bottom: 45px;
+}
+
+.login-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  border-bottom-left-radius: 65px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.login-button {
+  width: 90%;
+  background-color: #0f7c0f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: var(--color-body);
+}
+
+.signup-button {
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid #0f7c0f;
+  border-radius: 5px;
+  color: #0f7c0f;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: var(--color-base2);
+  color: var(--color-text);
+}
+
+.login-line {
+  width: 200px; /* Set the desired width */
+  height: 1px;
+  background-color: var(--color-base2);
+  position: relative;
+  margin: 50px auto 20px auto;
+}
+
+.login-line::before {
+  /*before and after*/
+  content: "or Login with";
+  position: absolute;
+  top: -10px;
+  transform: translateX(-50%);
+  background-color: var(--color-base1);
+  color: #0f7c0f;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #0f7c0f;
+  color: #fff;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  align-items: center;
+  overflow: visible;
+}
+
+/* form Sign Up css responsiveness */
+
+@media screen and (max-width: 400px) {
+     body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: var(--color-body);
+  }
+}
+
+@media screen and (max-width: 375px) {
+ body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: var(--color-body);
+  }
+}
+
+@media screen and (max-width: 320px) {
+     body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: var(--color-body);
+  }
+
+   p {
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+   .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #0f7c0f;
+    color: #fff;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    align-items: center;
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: var(--color-body);
+  }
+
+  .login-container {
+    width: 100%;
+    margin: 50px auto;
+    background-color: var(--color-base1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top-right-radius: 70px;
+    padding-bottom: 45px;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #0f7c0f;
+    color: #fff;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    align-items: center;
+    overflow: visible;
+  }
+}
